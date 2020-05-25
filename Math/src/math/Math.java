@@ -54,5 +54,25 @@ public class Math {
         
         System.out.println("Area of circle = " + circleArea);
         System.out.println("Perimeter of circle = " + circleCircumference);
+        
+        System.out.println("Enter side of pentagon ");
+        double pentside = in.nextDouble();
+
+        RegularPentagon myRegularPentagon = new RegularPentagon(pentside);
+        double RegularPentagonArea = myRegularPentagon.area();
+        double RegularPentagonPerimeter = myRegularPentagon.perimeter();
+
+        System.out.println("Area of pentagon = " + RegularPentagonArea);
+        System.out.println("Perimeter of pentagon = " + RegularPentagonPerimeter);
+        
+        System.out.println("Enter side of hexagon ");
+        double hexside = in.nextDouble();
+        
+        RegularHexagon myRegularHexagon = new RegularHexagon(hexside);
+        double RegularHexagonArea = myRegularHexagon.area();
+        double RegularHexagonPerimeter = myRegularHexagon.perimeter();
+
+        System.out.println("Area of Hexagon = " + RegularHexagonArea);
+        System.out.println("Perimeter of Hexagon = " + RegularHexagonPerimeter);
     }
 }
